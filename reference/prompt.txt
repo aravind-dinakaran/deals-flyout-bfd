@@ -1,0 +1,4 @@
+Consider the code format in @reference/wk-10-bfd.html . Now, use the same code but update the cards text as given here: https://www.figma.com/design/koyRncyne0Nbf5dZ5BWMQ4/FY26---Q1-WK14-Hot-Deals?node-id=8-920&m=dev and place the updated code in @bfd.html . The required asset links are available inside @assets/bfd.txt . 
+Also, use the code in @reference/wk-10-deals-flyout.html but update the cards according to "https://www.figma.com/design/koyRncyne0Nbf5dZ5BWMQ4/FY26---Q1-WK14-Hot-Deals?node-id=1-255&m=dev" and place the updated code in @deals-flyout.html . The required asset links are available inside @assets/deals-flyout.txt . 
+For both the files, the required values to configure within clickthrough URLs, alt text and aria-label are available inside the tab "Week 14" within @reference/The Grid 2026.xlsx .
+
