@@ -1,0 +1,475 @@
+<!--Deals slider code starts here-->
+<style>
+    .slider-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .slider {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        padding-left: 0 !important;
+    }
+
+    .card-slider-component {
+        flex: 0 0 312px;
+        margin-right: 24px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 8px;
+        border: 1px solid #E8E8E8;
+    }
+
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .prev {
+        left: 10px;
+    }
+
+    .next {
+        right: 10px;
+    }
+
+    .slider::-webkit-scrollbar {
+        display: none;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 34px !important;
+        height: 34px !important;
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        z-index: 10;
+        display: none;
+        opacity: 1 !important;
+    }
+
+    .carousel-control-prev {
+        left: 16px;
+        top: 50% !important;
+    }
+
+    .carousel-control-next {
+        right: 16px;
+        top: 50% !important;
+    }
+
+    .carousel-control-prev img,
+    .carousel-control-next img {
+        width: 100%;
+        height: auto;
+        transition: all 0.3s ease;
+    }
+
+    .carousel-control-prev:hover img {
+        content: url('https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt85d13c756fd4c87f/6668cc8105319148701f3beb/left-arrow_hover.svg');
+    }
+
+    .carousel-control-next:hover img {
+        content: url('https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltc1bb7050ac69c4dc/6668c1d8a70874062b612002/arrow_hover.svg');
+    }
+
+    .text-card-title {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+    @media (max-width: 767px) {
+        .card-slider-component {
+            flex: 0 0 225px;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            display: none;
+        }
+
+        .text-card-title {
+            font-size: 1rem;
+        }
+    }
+
+    /* Side Tiles */
+
+    .tile-card {
+        border: 1px solid #CCCCCC;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tile-card:hover {
+        text-decoration: none;
+    }
+
+    .tile-card .padding-header {
+        padding: 1rem !important;
+    }
+
+    .remove-underline:hover {
+        text-decoration: none;
+    }
+
+    .strike-thru {
+        text-decoration: line-through;
+        text-decoration-color: #e81111;
+    }
+
+    @media (max-width: 767px) {
+        .tile-card {
+            flex: 0 0 250px;
+            position: relative;
+        }
+    }
+
+    @media (min-width:1401px) {
+        .text-card-disclaimer {
+            font-size: 1.3rem;
+        }
+    }
+
+    /* Shop Now CTA Button  */
+
+    .shop-now-btn {
+        margin: 0 0 0.5rem 0.5rem !important;
+        border-radius: 4px !important;
+        border: 1px solid #1946C8 !important;
+        background: var(--Primary-White, #FFF) !important;
+        color: #1946C8 !important;
+    }
+
+    .shop-now-btn:hover {
+        color: var(--Primary-White, #FFF) !important;
+        background: #1946C8 !important;
+    }
+
+    .card-foot {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: auto;
+    }
+</style>
+<div id="bfd-hotdeals-test" class="slider-container cont-1656 hp-margin my-3">
+    <div class="slider" id="trending-carousel-items-BFD">
+        <button class="css-scroll-btn css-scroll-btn-prev" id="imageSlidingRec-prev" role="button" data-slide="prev"
+            aria-label="Previous">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="16" fill="white"></rect>
+                <rect x="2.5" y="2.5" width="27" height="27" rx="13.5" fill="white"></rect>
+                <rect x="2.5" y="2.5" width="27" height="27" rx="13.5" stroke="#333333"></rect>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M12.5286 16.4717C12.2682 16.2114 12.2682 15.7893 12.5286 15.5289L18.5286 9.52892C18.7889 9.26857 19.211 9.26857 19.4714 9.52892C19.7317 9.78927 19.7317 10.2114 19.4714 10.4717L13.9428 16.0003L19.4714 21.5289C19.7317 21.7893 19.7317 22.2114 19.4714 22.4717C19.211 22.7321 18.7889 22.7321 18.5286 22.4717L12.5286 16.4717Z"
+                    fill="#333333"></path>
+            </svg>
+        </button>
+
+        <!-- Bronco or 3-Burner Gas Grill -->
+        <div class="tile-card corners card-slider-component">
+            <a aria-label="Shop Outdoor Gourmet and more top brand grills from $99.99."
+                class="color-dark-blue hp-hover remove-underline d-flex flex-column h-100"
+                href="https://www.academy.com/c/outdoors/grills--outdoor-cooking/grills"
+                data-omni="deal_snr_grills99d">
+                <picture>
+                    <source media="(min-width: 768px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt63bd26a9f9e96ed3/6a3d73e75b211f100c983c8a/deal_outdoor_gourmet.png">
+                    <source media="(max-width: 767px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt63bd26a9f9e96ed3/6a3d73e75b211f100c983c8a/deal_outdoor_gourmet.png">
+                    <img alt="Shop Outdoor Gourmet and more top brand grills from $99.99."
+                        class="img-fluid corners-top tile-img" loading="lazy"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt63bd26a9f9e96ed3/6a3d73e75b211f100c983c8a/deal_outdoor_gourmet.png"
+                        width="250" />
+                </picture>
+                <div class="padding-header" style="z-index: 1;">
+                    <div class="text-card-kicker">Was $149.99</div>
+                    <div class="text-card-promo color-red">$99.99</div>
+                    <div class="text-card-title">Bronco or 3-Burner<br>Gas Grill</div>
+                    <div class="text-card-disclaimer"></div>
+                </div>
+                <div class="card-foot"><span class="btn shop-now-btn">Shop Now</span></div>
+            </a>
+        </div>
+
+        <!-- Patio Sets -->
+        <div class="tile-card corners card-slider-component">
+            <a aria-label="Save up to $200 on Mosaic patio furniture."
+                class="color-dark-blue hp-hover remove-underline d-flex flex-column h-100"
+                href="https://www.academy.com/c/home-backyard/outdoor-living/patio-furniture?&amp;facet=%27facet_Deals%27:%27Hot%20Deal%27"
+                data-omni="deal_snr_mosaicpatiofurniture200d">
+                <picture>
+                    <source media="(min-width: 768px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltdff15e0878997c5e/6a3d73e732b38b358200f65d/deal_mosaic-3.png">
+                    <source media="(max-width: 767px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltdff15e0878997c5e/6a3d73e732b38b358200f65d/deal_mosaic-3.png">
+                    <img alt="Save up to $200 on Mosaic patio furniture." class="img-fluid corners-top tile-img"
+                        loading="lazy"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltdff15e0878997c5e/6a3d73e732b38b358200f65d/deal_mosaic-3.png"
+                        width="250" />
+                </picture>
+                <div class="padding-header" style="z-index: 1;">
+                    <div class="text-card-kicker">Up to</div>
+                    <div class="text-card-promo color-red">$200 OFF</div>
+                    <div class="text-card-title">Patio Sets</div>
+                    <div class="text-card-disclaimer"></div>
+                </div>
+                <div class="card-foot"><span class="btn shop-now-btn">Shop Now</span></div>
+            </a>
+        </div>
+
+        <!-- Backyard Water Fun -->
+        <div class="tile-card corners card-slider-component">
+            <a aria-label="Save up to 40% on backyard water fun."
+                class="color-dark-blue hp-hover remove-underline d-flex flex-column h-100"
+                href="https://www.academy.com/c/shops/fun-in-the-sun/pools--water-toys"
+                data-omni="deal_snr_backyardwaterfun40p">
+                <picture>
+                    <source media="(min-width: 768px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltdcd717fe722d7f03/6a41feec8a20322702c2dda8/deal_Water_Fun_promo.png">
+                    <source media="(max-width: 767px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltdcd717fe722d7f03/6a41feec8a20322702c2dda8/deal_Water_Fun_promo.png">
+                    <img alt="Save up to 40% on backyard water fun." class="img-fluid corners-top tile-img"
+                        loading="lazy"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltdcd717fe722d7f03/6a41feec8a20322702c2dda8/deal_Water_Fun_promo.png"
+                        width="250" />
+                </picture>
+                <div class="padding-header" style="z-index: 1;">
+                    <div class="text-card-kicker">Up to</div>
+                    <div class="text-card-promo color-red">40% OFF</div>
+                    <div class="text-card-title">Backyard Water Fun</div>
+                    <!-- <div class="text-card-disclaimer">Select Styles</div> -->
+                </div>
+                <div class="card-foot"><span class="btn shop-now-btn">Shop Now</span></div>
+            </a>
+        </div>
+
+        <!-- Laguna Madre -->
+        <div class="tile-card corners card-slider-component">
+            <a aria-label="Shop Laguna Madre shirts for $19.99."
+                class="color-dark-blue hp-hover remove-underline d-flex flex-column h-100"
+                href="https://www.academy.com/c/brands/magellan/laguna-madre"
+                data-omni="deal_app_lagunamadre19d">
+                <picture>
+                    <source media="(min-width: 768px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blte56321bbd0cd0f24/6a3e8b22739af58574f50ecd/deal_Magellan.png">
+                    <source media="(max-width: 767px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blte56321bbd0cd0f24/6a3e8b22739af58574f50ecd/deal_Magellan.png">
+                    <img alt="Laguna Madre shirt, was $24.99, now $19.99."
+                        class="img-fluid corners-top tile-img" loading="lazy"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blte56321bbd0cd0f24/6a3e8b22739af58574f50ecd/deal_Magellan.png"
+                        width="250" />
+                </picture>
+                <div class="padding-header" style="z-index: 1;">
+                    <div class="text-card-kicker">Was $24.99</div>
+                    <div class="text-card-promo color-red">$19.99</div>
+                    <div class="text-card-title">Laguna Madre</div>
+                    <div class="text-card-disclaimer"></div>
+                </div>
+                <div class="card-foot"><span class="btn shop-now-btn">Shop Now</span></div>
+            </a>
+        </div>
+
+        <!-- Men's Coaches Polo -->
+        <div class="tile-card corners card-slider-component">
+            <a aria-label="Shop men's BCG Coaches Polos for $19.99."
+                class="color-dark-blue hp-hover remove-underline d-flex flex-column h-100"
+                href="https://www.academy.com/c/mens/mens-apparel/mens-shirts--t-shirts?&amp;facet=%27facet_Brand%27:%27BCG%27"
+                data-omni="deal_app_bcgcoachespolos19d">
+                <picture>
+                    <source media="(min-width: 768px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltbb1505cd4644ee89/6a3d73e7125e39cf8cbb87ab/deal_bcg-1.png">
+                    <source media="(max-width: 767px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltbb1505cd4644ee89/6a3d73e7125e39cf8cbb87ab/deal_bcg-1.png">
+                    <img alt="Men's BCG Coaches Polo." class="img-fluid corners-top tile-img" loading="lazy"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltbb1505cd4644ee89/6a3d73e7125e39cf8cbb87ab/deal_bcg-1.png"
+                        width="250" />
+                </picture>
+                <div class="padding-header" style="z-index: 1;">
+                    <div class="text-card-kicker">Was $12.99</div>
+                    <div class="text-card-promo color-red">$9.99</div>
+                    <div class="text-card-title">Men's Coaches Polo</div>
+                    <div class="text-card-disclaimer"></div>
+                </div>
+                <div class="card-foot"><span class="btn shop-now-btn">Shop Now</span></div>
+            </a>
+        </div>
+
+
+        <!-- Up to 40% off Select Clothing from Columbia -->
+        <div class="tile-card corners card-slider-component">
+            <a aria-label="Shop Up to 40% off Select Clothing from Columbia."
+                class="color-dark-blue hp-hover remove-underline d-flex flex-column h-100"
+                href="https://www.academy.com/c/brands/columbia#wrapperProductGrid"
+                data-omni="deal_app_columbia40p">
+                <picture>
+                    <source media="(min-width: 768px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt128c9992d7415090/6a42c80c85b1c3776343ac10/deal_columbia_promo.png">
+                    <source media="(max-width: 767px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt128c9992d7415090/6a42c80c85b1c3776343ac10/deal_columbia_promo.png">
+                    <img alt="Up to 40% off Select Clothing from Columbia." class="img-fluid corners-top tile-img" loading="lazy"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt128c9992d7415090/6a42c80c85b1c3776343ac10/deal_columbia_promo.png"
+                        width="250" />
+                </picture>
+                <div class="padding-header" style="z-index: 1;">
+                    <div class="text-card-kicker">Up to</div>
+                    <div class="text-card-promo color-red">40% OFF</div>
+                    <div class="text-card-title">Select Clothing</div>
+                    <div class="text-card-disclaimer"></div>
+                </div>
+                <div class="card-foot"><span class="btn shop-now-btn">Shop Now</span></div>
+            </a>
+        </div>
+
+        
+
+        <!-- Firearms + Ammo Rebates -->
+        <div class="tile-card corners card-slider-component">
+            <a aria-label="Explore rebates on firearms and ammunition."
+                class="color-dark-blue hp-hover remove-underline d-flex flex-column h-100"
+                href="/c/shops/mktg-offers/out-offer-12" data-omni="deal_out_firearmsrebate">
+                <picture>
+                    <source media="(min-width: 768px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltcb20ea991900abc9/6879642d65671569fb0ef5e3/Deal_WK25_Firearms_UPDATE.png?auto=webp&amp;format=pjpg">
+                    <source media="(max-width: 767px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltcb20ea991900abc9/6879642d65671569fb0ef5e3/Deal_WK25_Firearms_UPDATE.png?auto=webp&amp;format=pjpg&amp;width=250">
+                    <img alt="Promotional graphic with two handguns angled inward over a textured gray background."
+                        class="img-fluid corners-top tile-img" loading="lazy"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltcb20ea991900abc9/6879642d65671569fb0ef5e3/Deal_WK25_Firearms_UPDATE.png?auto=webp&amp;format=pjpg&amp;width=250"
+                        width="250" />
+                </picture>
+                <div class="padding-header" style="z-index: 1;">
+                    <div class="text-card-kicker">Save on Top Brands</div>
+                    <div class="text-card-promo color-red"></div>
+                    <div class="text-card-title">Rebates on<br>Firearms + Ammo</div>
+                    <div class="text-card-disclaimer"></div>
+                </div>
+                <div class="card-foot"><span class="btn shop-now-btn">Shop Now</span></div>
+            </a>
+        </div>
+
+        <!-- Ammo 10% OFF -->
+        <div class="tile-card corners card-slider-component">
+            <a aria-label="Shop full-priced ammo up to 10% off."
+                class="color-dark-blue hp-hover remove-underline d-flex flex-column h-100"
+                href="/c/outdoors/shooting/ammunition" data-omni="deal_out_ammo10p">
+                <picture>
+                    <source media="(min-width: 768px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blte1cd232137b4c5c5/6a286d06f02283c53f65c5da/deal_ammo_10poff.png?auto=webp&amp;format=pjpg" />
+                    <source media="(max-width: 767px)"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blte1cd232137b4c5c5/6a286d06f02283c53f65c5da/deal_ammo_10poff.png?auto=webp&amp;format=pjpg&amp;width=250" />
+                    <img alt="Promotional graphic showing scattered ammunition on a dark wooden surface."
+                        class="img-fluid corners-top tile-img" loading="lazy"
+                        srcset="https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blte1cd232137b4c5c5/6a286d06f02283c53f65c5da/deal_ammo_10poff.png?auto=webp&amp;format=pjpg&amp;width=250"
+                        width="250" />
+                </picture>
+                <div class="padding-header" style="z-index: 1;">
+                    <div class="text-card-kicker"></div>
+                    <div class="text-card-promo color-red"></div>
+                    <div class="text-card-title">When You Spend<br>$300+ on Ammo</div>
+                    <div class="text-card-disclaimer"></div>
+                </div>
+                <div class="card-foot"><span class="btn shop-now-btn">Shop Now</span></div>
+            </a>
+        </div>
+
+        <button class="css-scroll-btn css-scroll-btn-next" id="imageSlidingRec-next" role="button" data-slide="next"
+            style="display: none;" aria-label="Next">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="32" height="32" rx="16" transform="matrix(-1 0 0 1 32 0)" fill="white" />
+                <rect x="-0.5" y="0.5" width="27" height="27" rx="13.5" transform="matrix(-1 0 0 1 29 2)"
+                    fill="white" />
+                <rect x="-0.5" y="0.5" width="27" height="27" rx="13.5" transform="matrix(-1 0 0 1 29 2)"
+                    stroke="#333333" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M19.4714 16.4717C19.7318 16.2114 19.7318 15.7893 19.4714 15.5289L13.4714 9.52892C13.2111 9.26857 12.789 9.26857 12.5286 9.52892C12.2683 9.78927 12.2683 10.2114 12.5286 10.4717L18.0572 16.0003L12.5286 21.5289C12.2683 21.7893 12.2683 22.2114 12.5286 22.4717C12.789 22.7321 13.2111 22.7321 13.4714 22.4717L19.4714 16.4717Z"
+                    fill="#333333" />
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const createCarouselControls = (carouselId, prevId, nextId) => {
+                const carouselContainer = document.getElementById(carouselId);
+                const prevButton = document.getElementById(prevId);
+                const nextButton = document.getElementById(nextId);
+                const cards = carouselContainer.querySelectorAll('.card-slider-component');
+
+                function updateButtonVisibility() {
+                    const maxScrollLeft = carouselContainer.scrollWidth - carouselContainer.clientWidth;
+                    const isMobile = window.innerWidth < 767;
+
+                    if (!isMobile) {
+                        if (carouselContainer.scrollLeft > 0) {
+                            prevButton.style.display = 'block';
+                        } else {
+                            prevButton.style.display = 'none';
+                        }
+
+                        if (carouselContainer.scrollLeft + 1 < maxScrollLeft) {
+                            nextButton.style.display = 'block';
+                        } else {
+                            nextButton.style.display = 'none';
+                        }
+                    } else {
+                        prevButton.style.display = 'none';
+                        nextButton.style.display = 'none';
+                    }
+                }
+
+                function getVisibleCards() {
+                    const containerWidth = carouselContainer.clientWidth;
+                    let visibleCards = 0;
+                    let totalWidth = 0;
+
+                    for (const card of cards) {
+                        totalWidth += card.offsetWidth + parseInt(window.getComputedStyle(card).marginRight);
+                        if (totalWidth <= containerWidth) {
+                            visibleCards++;
+                        } else {
+                            break;
+                        }
+                    }
+
+                    return visibleCards;
+                }
+
+                nextButton.addEventListener('click', () => {
+                    const visibleCards = getVisibleCards();
+                    const cardWidth = cards[0].offsetWidth + parseInt(window.getComputedStyle(cards[0]).marginRight);
+                    carouselContainer.scrollBy({ left: cardWidth * visibleCards, behavior: 'smooth' });
+                    setTimeout(updateButtonVisibility, 500);
+                });
+
+                prevButton.addEventListener('click', () => {
+                    const visibleCards = getVisibleCards();
+                    const cardWidth = cards[0].offsetWidth + parseInt(window.getComputedStyle(cards[0]).marginRight);
+                    carouselContainer.scrollBy({ left: -cardWidth * visibleCards, behavior: 'smooth' });
+                    setTimeout(updateButtonVisibility, 500);
+                });
+
+                carouselContainer.addEventListener('scroll', updateButtonVisibility);
+                window.addEventListener('resize', updateButtonVisibility);
+
+                updateButtonVisibility();
+            };
+
+            createCarouselControls('trending-carousel-items-BFD', 'imageSlidingRec-prev', 'imageSlidingRec-next');
+        });
+    </script>
+</div>
+<!--Deals slider code Ends here-->

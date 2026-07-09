@@ -1,0 +1,16 @@
+Since all 5 files were modified at the exact same time (Jun 25, 2026, 01:31 PM), they are listed below with their corresponding filenames and full asset URLs:
+
+Filename: Deal-Patio_Sets-WK22V1.png.png
+URL: https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt67820431c6979cc5/6a3d74046391ef7ba0167910/Deal-Patio_Sets-WK22V1.png.png
+
+Filename: Deal-Coaches_Polo-WK22V1.png.png
+URL: https://images.contentstack.io/v3/assets/blt964243cdd7810dea/bltdf6961c54e5e35ea/6a3d7404267c42518bff9faf/Deal-Coaches_Polo-WK22V1.png.png
+
+Filename: Deal-Gas_Grill-WK22V1.png.png
+URL: https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt40769abb50b8b48c/6a3d7404c6c4bc3f9f638dc1/Deal-Gas_Grill-WK22V1.png.png
+
+Filename: Deal-Laguna_Madre-WK22V1.png.png
+URL: https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blt4a0d36c7e96445c5/6a3d7404aa47f28085c6f4ba/Deal-Laguna_Madre-WK22V1.png.png
+
+Filename: Deal-Backyard_Water-WK22V1.png
+URL: https://images.contentstack.io/v3/assets/blt964243cdd7810dea/blte88fca26dabdd099/6a3d7404cf4d2c749bed7cce/Deal-Backyard_Water-WK22V1.png
