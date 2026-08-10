@@ -55,15 +55,15 @@ Transform tasks into verifiable goals:
 
 - The page is built using plain HTML/CSS/JS and is deployed as a Contentstack CMS component.
 - The goal is to preserve the structure of code in @reference/bfd.html but update the cards within it according to a new set of stories. Do not update the style.
-- The image assets are present within @wk18/assets/bfd.txt in the descending order of their modified time. If a particular story matches multiple assets, consider the asset that was modified last.
-- The values for clickthrough links, data-omni, aria-label and alt text are available within @wk18/reference/the_grid.csv. For the data-omni value, when a matching story is found within @wk18/reference/the_grid.csv , retrieve the data-omni value, separate the string using '_' and get the last 2 values and then form the value according to this: 'deal\_<value1>\_<value2>'
-- Create a new file in the @wk18 folder of the current repository with name "bfd.html" and generate the new code according to the given Figma Mockup. If the Figma mockup is not given, ask the user for it. Use the Figma mockup just to know the order of the cards and the text within each card.
+- The image assets are present within @wk26/assets/bfd.txt in the descending order of their modified time. If a particular story matches multiple assets, consider the asset that was modified last.
+- The values for clickthrough links, data-omni, aria-label and alt text are available within the Week 26 tab inside @wk26/reference/the_grid.xlsx. For the data-omni value, when a matching story is found within the Week 26 tab inside @wk26/reference/the_grid.xlsx , retrieve the data-omni value, separate the string using '_' and get the last 2 values and then form the value according to this: 'deal\_<value1>\_<value2>'
+- Create a new file in the @wk26 folder of the current repository with name "bfd.html" and generate the new code according to the given Figma Mockup. If the Figma mockup is not given, ask the user for it. Use the Figma mockup just to know the order of the cards and the text within each card.
 
 
 ## Steps to build deals-flyout.html
 
 - The page is built using plain HTML/CSS/JS and is deployed as a Monetate component.
 - The goal is to preserve the structure of code in @reference/deals-flyout.html but update the cards within it according to a new set of stories. Do not update the style.
-- The image assets are present within @wk18/assets/deals-flyout.txt in the descending order of their modified time. If a particular story matches multiple assets, consider the asset that was modified last.
-- The values for clickthrough links, data-omni, aria-label and alt text are available within @wk18/reference/the_grid.csv. For the data-omni value, when a matching story is found within @wk18/reference/the_grid.csv , retrieve the data-omni value, separate the string using '_' and get the last 2 values and then form the value according to this: 'df\_<value1>\_<value2>'
-- Create a new file in the @wk18 folder of the current repository with name "deals-flyout.html" and generate the new code according to the given Figma Mockup. If the Figma mockup is not given, ask the user for it. Use the Figma mockup just to know the order of the cards.
+- The image assets are present within @wk26/assets/deals-flyout.txt in the descending order of their modified time. If a particular story matches multiple assets, consider the asset that was modified last.
+- The values for clickthrough links, data-omni, aria-label and alt text are available within the Week 26 tab inside @wk26/reference/the_grid.xlsx. For the data-omni value, when a matching story is found within the Week 26 tab inside @wk26/reference/the_grid.xlsx , retrieve the data-omni value, separate the string using '_' and get the last 2 values and then form the value according to this: 'df\_<value1>\_<value2>'
+- Create a new file in the @wk26 folder of the current repository with name "deals-flyout.html" and generate the new code according to the given Figma Mockup. If the Figma mockup is not given, ask the user for it. Use the Figma mockup just to know the order of the cards.
