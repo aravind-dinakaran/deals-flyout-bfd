@@ -1,0 +1,11 @@
+---
+description: Require live Figma MCP auth before implementing mockups
+alwaysApply: true
+---
+
+# Figma MCP
+
+- Use the Figma mockup for card order and on-card text. Use the Week grid for links, `data-omni`, aria-label, and alt text.
+- If Figma MCP is `needsAuth`, call `mcp_auth` and stop. Do not guess the layout from the grid or older weeks.
+- Browser/desktop Figma login is not Cursor auth. The user must click **Allow** on the OAuth card.
+- After auth, load `figma-design-to-code` and call `get_design_context` on the given node before writing HTML.

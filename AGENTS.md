@@ -51,6 +51,13 @@ Transform tasks into verifiable goals:
 2. [Step] → verify: [check]
 3. [Step] → verify: [check]
 
+## Figma MCP
+
+- Card order and on-card text come from the Figma mockup. The grid supplies links, `data-omni`, aria-label, and alt text.
+- If the Figma MCP server (`plugin-figma-figma` or `figma`) reports `needsAuth`, call `mcp_auth` and **stop**. Do not implement from the grid, asset filenames, or prior weeks.
+- Signing in to Figma in the browser or desktop app is not Cursor MCP auth. The user must approve the Cursor **Allow** / OAuth card. Skipping that card leaves Figma disconnected.
+- After auth succeeds, call `get_design_context` (after loading `figma-design-to-code`) on the provided node before writing HTML.
+
 ## Steps to build bfd.html
 
 - The page is built using plain HTML/CSS/JS and is deployed as a Contentstack CMS component.
